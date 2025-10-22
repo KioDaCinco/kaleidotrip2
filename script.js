@@ -13,7 +13,7 @@ window.onclick = function(event) {
   if (event.target == signUpModal) signUpModal.style.display = "none";
 };
 
-// Fake authentication
+// Fake authentication (front-end only)
 document.getElementById("submitSignIn").onclick = () => {
   const email = document.getElementById("signInEmail").value;
   const pass = document.getElementById("signInPassword").value;
