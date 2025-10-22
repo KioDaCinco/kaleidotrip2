@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KaleidoTrip</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">KaleidoTrip</div>
+    <nav>
+      <a href="#">Flights</a>
+      <a href="#">Hotels</a>
+      <a href="#">Packages</a>
+      <a href="#">Deals</a>
+    </nav>
+    <div class="auth-buttons">
+      <button id="signInBtn">Sign In</button>
+      <button id="signUpBtn">Sign Up</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1>Discover Your Next Adventure</h1>
+    <p>Book flights, hotels, and experiences at the best prices. Your dream vacation starts here.</p>
+    <div class="search-box">
+      <input type="text" id="fromInput" placeholder="From: e.g. Manila" />
+      <input type="text" id="toInput" placeholder="To: e.g. Tokyo" />
+      <input type="date" id="dateInput" />
+      <input type="number" id="passengersInput" min="1" value="1" />
+      <button id="searchBtn">Search Flights</button>
+    </div>
+  </section>
+
+  <section class="results" id="resultsSection">
+    <h2>Available Flights</h2>
+    <div id="resultsContainer"></div>
+  </section>
+
+  <section class="destinations">
+    <h2>Popular Destinations</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://source.unsplash.com/featured/?paris,france,city" alt="Paris">
+        <h3>Paris, France</h3>
+        <p>City of lights</p>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/featured/?tokyo,japan,city" alt="Tokyo">
+        <h3>Tokyo, Japan</h3>
+        <p>Food & culture</p>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/featured/?bali,indonesia,beach" alt="Bali">
+        <h3>Bali, Indonesia</h3>
+        <p>Beaches & rice terraces</p>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/featured/?reykjavik,iceland,nature" alt="Iceland">
+        <h3>Reykjavik, Iceland</h3>
+        <p>Northern lights</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sign In Modal -->
+  <div id="signInModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeSignIn">&times;</span>
+      <h2>Sign In</h2>
+      <input type="text" id="signInEmail" placeholder="Email" />
+      <input type="password" id="signInPassword" placeholder="Password" />
+      <button id="submitSignIn">Login</button>
+    </div>
+  </div>
+
+  <!-- Sign Up Modal -->
+  <div id="signUpModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeSignUp">&times;</span>
+      <h2>Create Account</h2>
+      <input type="text" id="signUpName" placeholder="Full Name" />
+      <input type="email" id="signUpEmail" placeholder="Email" />
+      <input type="password" id="signUpPassword" placeholder="Password" />
+      <button id="submitSignUp">Register</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
